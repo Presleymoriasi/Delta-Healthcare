@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>deltahealthcare.com</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo at the top -->
+        <img src="logo.png" alt="Delta Healthcare Logo" class="logo">
+        <h1>WE CARE ABOUT YOUR HEALTH</h1>
+        <p>Join over 2,000 patients with access to over 3,500 doctors countrywide</p>
+        <button>Sign up</button>
+    </header>
+
+    <section id="services">
+        <h2>OUR BEST SERVICES</h2>
+        <div class="services-grid">
+            <div class="service">Dental Services</div>
+            <div class="service">Maternity</div>
+            <div class="service">Paramedics</div>
+            <div class="service">Family Planning</div>
+            <div class="service">Ophthalmology</div>  
+            <div class="service">Veterinary services</div>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <h2>OUR BEST DOCTORS</h2>
+        <div class="doctors-grid">
+            <div class="doctor">
+                <!-- Logo next to doctor's name -->
+                <img src="doctor-logo.png" alt="Doctor Icon" class="doctor-logo">
+                <h3>Dr. Rose Moraa</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor">
+                <img src="doctor-logo.png" alt="Doctor Icon" class="doctor-logo">
+                <h3>Dr. Jonathan Kuminga</h3>
+                <p>Orthopedic Surgeon</p>
+            </div>
+            <div class="doctor">
+                <img src="doctor-logo.png" alt="Doctor Icon" class="doctor-logo">
+                <h3>Dr. Emily Nyaboke</h3>
+                <p>General Practitioner</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>BOOK YOUR APPOINTMENT:</h2>
+        <form id="appointmentForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Choose Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. Rose Moraa">Dr. Rose Moraa (Cardiologist)</option>
+                <option value="Dr. John Doe">Dr. Jonathan Kuminga (Orthopedic Surgeon)</option>
+                <option value="Dr. Emily Nyaboke">Dr. Emily Nyaboke (General Practitioner)</option>
+            </select>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+          <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Delta Healthcare. All Rights Reserved.
+        Terms and conditions apply.</p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

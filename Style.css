@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    color: #ffffff
+}
+
+section {
+    padding: 5px;
+    text-align: center;
+}
+
+.services-grid, .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service, .doctor {
+    padding: 20px;
+    background-color: #808080;
+    border-radius: 8px;
+    color: #000
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid, .doctors-grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    header p {
+        font-size: 1.3em;
+    }
+
+    form input, form select, form button {
+        padding: 10px;
+        font-size: 1em;
+    }
